@@ -1,0 +1,76 @@
+# =========================
+# Python / Virtualenv
+# =========================
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+pip-wheel-metadata/
+
+# =========================
+# Jupyter / VS Code
+# =========================
+.ipynb_checkpoints/
+.vscode/
+*.code-workspace
+
+# =========================
+# OS junk
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Data (DO NOT COMMIT RAW EBM DATA)
+# =========================
+data/*.parquet
+data/*.pq
+data/*.feather
+data/*.arrow
+data/*_raw.*
+data/*_extract.*
+data/*_dump.*
+data/*_sample.*
+data/*_anonymized.*
+
+# Allow committing the schema / column list
+!data/ebm_columns.csv
+
+# =========================
+# Outputs & artifacts (can be large)
+# =========================
+outputs/*.csv
+outputs/*.parquet
+outputs/*.json
+
+# Saved models / scalers
+model/
+scaler/
+
+# =========================
+# Secrets / env vars
+# =========================
+.env
+.env.*
+*.pem
+*.key
+
+# =========================
+# Testing / tooling caches
+# =========================
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
